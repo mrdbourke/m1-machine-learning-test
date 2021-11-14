@@ -14,4 +14,4 @@ def print_train_time(start, end, device=None):
         print(f"\nTrain time on {device}: {total_time:.3f} seconds")
     else:
         print(f"\nTrain time: {total_time:.3f} seconds")
-    return total_time
+    return round(total_time, 3)
