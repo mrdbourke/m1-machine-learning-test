@@ -1,0 +1,2 @@
+,device,dataset_name,epochs,batch_size,num_train_samples,num_test_samples,total_train_time,time_per_epoch,model
+0,Google Colab (K80 GPU),food101,5,32,75776,25280,2122.14,424.428,EfficientNetB0_feature_extract
