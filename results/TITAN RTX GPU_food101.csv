@@ -1,0 +1,2 @@
+,device,dataset_name,epochs,batch_size,num_train_samples,num_test_samples,total_train_time,time_per_epoch,model
+0,TITAN RTX GPU,food101,5,32,75776,25280,463.753,92.751,EfficientNetB0_feature_extract
