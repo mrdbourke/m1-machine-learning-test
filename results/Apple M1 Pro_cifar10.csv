@@ -1,0 +1,2 @@
+,device,dataset_name,epochs,batch_size,num_train_samples,num_test_samples,total_train_time,time_per_epoch,model
+0,Apple M1 Pro,cifar10,10,32,50016,10016,161.169,16.117,TinyVGG
