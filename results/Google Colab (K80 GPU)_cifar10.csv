@@ -1,0 +1,2 @@
+,device,dataset_name,epochs,batch_size,num_train_samples,num_test_samples,total_train_time,time_per_epoch,model
+0,Google Colab (K80 GPU),cifar10,10,32,50016,10016,166.911,16.691,TinyVGG
