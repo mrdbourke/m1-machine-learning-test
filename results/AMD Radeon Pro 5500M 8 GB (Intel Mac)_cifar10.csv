@@ -1,0 +1,2 @@
+,device,dataset_name,epochs,batch_size,num_train_samples,num_test_samples,total_train_time,time_per_epoch,model
+0,AMD Radeon Pro 5500M 8 GB (Intel Mac),cifar10,10,32,50016,10016,179.712,17.971,TinyVGG
