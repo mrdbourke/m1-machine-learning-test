@@ -1,0 +1,2 @@
+,device,dataset_name,epochs,batch_size,num_train_samples,num_test_samples,total_train_time,time_per_epoch,model
+0,Intel_Mac,california_housing,,,16512,4128,20.424,,RandomForestCV
