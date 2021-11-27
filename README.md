@@ -19,7 +19,7 @@ It also has steps below to setup your M1, M1 Pro and M1 Max (steps should also f
 
 If you're experienced with making environments and using the command line, follow this version. If not, see the longer version below. 
 
-1. Download and install Homebrew from https://brew.sh. Follow the steps it prompts you to go through after installed.
+1. Download and install Homebrew from https://brew.sh. Follow the steps it prompts you to go through after installation.
 2. [Download Miniforge3](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh) (Conda installer) for macOS arm64 chips (M1, M1 Pro, M1 Max).
 3. Install Miniforge3 into home directory.
 ```bash
@@ -28,7 +28,7 @@ sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
 source ~/miniforge3/bin/activate
 ```
 4. Restart terminal.
-5. Create directory to setup TensorFlow environment.
+5. Create a directory to setup TensorFlow environment.
 ```bash
 mkdir tensorflow-test
 cd tensorflow-test
@@ -94,7 +94,7 @@ If you're new to creating environments, using a new M1, M1 Pro, M1 Max machine a
 
 ### Installing package managers (Homebrew and Miniforge)
 
-1. Download and install Homebrew from https://brew.sh. Homebrew is a package manager that sets up a lot of useful things one your machine, including Command Line Tools for Xcode, you'll need this to run things like `git`. The command to install Homebrew will look something like:
+1. Download and install Homebrew from https://brew.sh. Homebrew is a package manager that sets up a lot of useful things on your machine, including Command Line Tools for Xcode, you'll need this to run things like `git`. The command to install Homebrew will look something like:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -102,11 +102,11 @@ If you're new to creating environments, using a new M1, M1 Pro, M1 Max machine a
 
 It will explain what it's doing and what you need to do as you go.
 
-2. [Download the most compitable version of Miniforge](https://github.com/conda-forge/miniforge#download) (minimal installer for Conda specific to conda-forge, Conda is another package manager and conda-forge is a Conda channel) from GitHub.
+2. [Download the most compatible version of Miniforge](https://github.com/conda-forge/miniforge#download) (minimal installer for Conda specific to conda-forge, Conda is another package manager and conda-forge is a Conda channel) from GitHub.
 
 If you're using an M1 variant Mac, it's "[Miniforge3-MacOSX-arm64](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh)" <- click for direct download. 
 
-Clicking the link aboe will download a shell file called `Miniforge3-MacOSX-arm64.sh` to your `Downloads` folder (unless otherwise specified). 
+Clicking the link above will download a shell file called `Miniforge3-MacOSX-arm64.sh` to your `Downloads` folder (unless otherwise specified). 
 
 3. Open Terminal.
 
@@ -145,7 +145,7 @@ Let's setup a folder called `tensorflow-test` (you can call this anything you wa
 
 > **Note:** An **environment** is like a virtual room on your computer. For example, you use the kitchen in your house for cooking because it's got all the tools you need. It would be strange to have an oven in your bedroom. The same thing on your computer. If you're going to be working on specific software, you'll want it all in one place and not scattered everywhere else. 
 
-7. Make directory called `tensorflow-test`. This is the directory we're going to be storing our environment. And inside the environment will be the software tools we need to run TensorFlow.
+7. Make a directory called `tensorflow-test`. This is the directory we're going to be storing our environment. And inside the environment will be the software tools we need to run TensorFlow.
 
 We can do so with the `mkdir` command which stands for "make directory".
 
@@ -155,7 +155,7 @@ mkdir tensorflow-test
 
 8. Change into `tensorflow-test`. For the rest of the commands we'll be running them inside the directory `tensorflow-test` so we need to change into it.
 
-We can do with the `cd` command which stands for "change directory".
+We can do this with the `cd` command which stands for "change directory".
 
 ```bash
 cd tensorflow-test
@@ -237,7 +237,7 @@ We can install it using:
 python -m pip install tensorflow-metal
 ```
 
-If the above works, we should now be able to leverage our Macs GPU cores to speed up model training with TensorFlow.
+If the above works, we should now be able to leverage our Mac's GPU cores to speed up model training with TensorFlow.
 
 14. (Optional) Install TensorFlow Datasets. Doing the above is enough to run TensorFlow on your machine. But if you'd like to run the benchmarks included in this repo, you'll need TensorFlow Datasets.
 
