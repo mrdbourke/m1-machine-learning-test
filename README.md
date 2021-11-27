@@ -11,7 +11,7 @@ It also has steps below to setup your M1, M1 Pro and M1 Max (steps should also f
 **This repo:** teaches you how to install the most common machine learning and data science packages (software) on your machine and make sure they run using sample code.
 
 ## Steps (how to test your machine)
-1. Create an environment and install dependencies (see below)
+1. Create an environment and install dependencies ([see below](https://github.com/mrdbourke/m1-machine-learning-test#how-to-setup-a-tensorflow-environment-on-m1-m1-pro-m1-max-using-miniforge-shorter-version))
 2. Clone this repo
 3. Run various notebooks (results come at the end of the notebooks)
 
@@ -42,7 +42,7 @@ conda activate ./env
 ```bash
 conda install -c apple tensorflow-deps
 ```
-8. Install base TensorFlow (Apple's fork of TensorFlow is called `tesnorflow-macos`).
+8. Install base TensorFlow (Apple's fork of TensorFlow is called `tensorflow-macos`).
 ```bash
 python -m pip install tensorflow-macos
 ```
@@ -71,10 +71,10 @@ import tensorflow as tf
 from matplotlib.pyplot import plt
 
 # Check for TensorFlow GPU access
-print(tf.config.list_physical_devices())
+print(f"TensorFlow has access to the following devices:\n{tf.config.list_physical_devices()}")
 
 # See TensorFlow version
-print(tf.__version__)
+print(f"TensorFlow version: {tf.__version__}")
 ```
 
 If it all worked, you should see something like: 
