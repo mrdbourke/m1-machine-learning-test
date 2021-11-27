@@ -25,11 +25,78 @@ This repo contains some sample code to benchmark the new M1 MacBooks (M1 Pro and
 
 If you're experienced with making environments and using the command line, follow this version. If not, see the longer version below. 
 
+1. Download and install Homebrew from https://brew.sh. Follow the steps it prompts you to go through after installed.
+2. [Download Miniforge3](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh) (Conda installer) for macOS arm64 chips (M1, M1 Pro, M1 Max).
+3. Install Miniforge3 into home directory.
+```bash
+chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
+sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
+source ~/miniforge3/bin/activate
+```
+4. Restart terminal.
+5. Create directory to setup TensorFlow environment.
+```bash
+mkdir tensorflow-test
+cd tensorflow-test
+```
+6. Make and activate Conda environment.
+```bash
+conda create --prefix ./env
+conda activate ./env
+```
+7. Install TensorFlow dependencies from Apple Conda channel.
+```bash
+conda install -c apple tensorflow-deps
+```
+8. Install base TensorFlow (Apple's fork of TensorFlow is called `tesnorflow-macos`).
+```bash
+python -m pip install tensorflow-macos
+```
+9. Install Apple's `tensorflow-metal` to leverage Apple Metal (Apple's GPU framework) for M1, M1 Pro, M1 Max GPU acceleration.
+```bash
+python -m pip install tensorflow-metal
+```
+10. (Optional) Install TensorFlow Datasets to run benchmarks included in this repo.
+```bash
+python -m pip install tensorflow-datasets
+```
+11. Install common data science packages.
+```bash
+conda install jupyter pandas numpy matplotlib scikit-learn
+```
+12. Start Jupyter Notebook.
+```bash
+jupyter notebook
+```
+13. Import dependencies and check TensorFlow version/GPU access.
+```python
+import numpy as np
+import pandas as pd
+import sklearn
+import tensorflow as tf
+from matplotlib.pyplot import plt
+
+# Check for TensorFlow GPU access
+print(tf.config.list_physical_devices())
+
+# See TensorFlow version
+print(tf.__version__)
+```
+
+If it all worked, you should see something like: 
+
+```bash
+TensorFlow has access to the following devices:
+[PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'),
+PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+TensorFlow version: 2.5.0
+```
+
 ## How to setup a TensorFlow environment on M1, M1 Pro, M1 Max using Miniforge (longer version)
 
-If you're using a new M1, M1 Pro, M1 Max machine and would like to get started running the speed tests, follow the bellow steps.
+If you're new to creating environments, using a new M1, M1 Pro, M1 Max machine and would like to get started running TensorFlow and other data science libraries, follow the below steps.
 
-**Note:** You're going to see the term "package manager" a lot below. Think of it like this: a package manager is a piece of software that helps you install other pieces (packages) of software.
+> **Note:** You're going to see the term "package manager" a lot below. Think of it like this: a **package manager** is a piece of software that helps you install other pieces (packages) of software.
 
 ### Installing package managers (Homebrew and Miniforge)
 
@@ -41,10 +108,9 @@ If you're using a new M1, M1 Pro, M1 Max machine and would like to get started r
 
 It will explain what it's doing and what you need to do as you go.
 
-
 2. [Download the most compitable version of Miniforge](https://github.com/conda-forge/miniforge#download) (minimal installer for Conda specific to conda-forge, Conda is another package manager and conda-forge is a Conda channel) from GitHub.
 
-If you're using an M1 variant Mac, it's "[Miniforge3-MacOSX-arm64](Miniforge3-MacOSX-arm64)" <- click for direct download. 
+If you're using an M1 variant Mac, it's "[Miniforge3-MacOSX-arm64](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-arm64.sh)" <- click for direct download. 
 
 Clicking the link aboe will download a shell file called `Miniforge3-MacOSX-arm64.sh` to your `Downloads` folder (unless otherwise specified). 
 
@@ -83,7 +149,7 @@ Now we've got the package managers we need, it's time to install TensorFlow.
 
 Let's setup a folder called `tensorflow-test` (you can call this anything you want) and install everything in there to make sure it's working.
 
-**Note:** An **environment** is like a virtual room on your computer. For example, you use the kitchen in your house for cooking because it's got all the tools you need. It would be strange to have an oven in your bedroom. The same thing on your computer. If you're going to be working on specific software, you'll want it all in one place and not scattered everywhere else. 
+> **Note:** An **environment** is like a virtual room on your computer. For example, you use the kitchen in your house for cooking because it's got all the tools you need. It would be strange to have an oven in your bedroom. The same thing on your computer. If you're going to be working on specific software, you'll want it all in one place and not scattered everywhere else. 
 
 7. Make directory called `tensorflow-test`. This is the directory we're going to be storing our environment. And inside the environment will be the software tools we need to run TensorFlow.
 
@@ -125,7 +191,7 @@ Long version:
 conda activate Users/daniel/tensorflow-test/env
 ```
 
-**Note:** It's important to activate your environment every time you'd like to work on projects that use the software you install into that environment. For example, you might have one environment for every different project you work on. And all of the different tools for that specific project are stored in its specific environment.
+> **Note:** It's important to activate your environment every time you'd like to work on projects that use the software you install into that environment. For example, you might have one environment for every different project you work on. And all of the different tools for that specific project are stored in its specific environment.
 
 If activating your environment went correctly, your terminal window prompt should look something like: 
 
