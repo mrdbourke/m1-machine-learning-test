@@ -68,7 +68,7 @@ import numpy as np
 import pandas as pd
 import sklearn
 import tensorflow as tf
-from matplotlib.pyplot import plt
+import matplotlib.pyplot as plt
 
 # Check for TensorFlow GPU access
 print(f"TensorFlow has access to the following devices:\n{tf.config.list_physical_devices()}")
@@ -269,7 +269,7 @@ import numpy as np
 import pandas as pd
 import sklearn
 import tensorflow as tf
-from matplotlib.pyplot import plt
+import matplotlib.pyplot as plt
 
 # Check for TensorFlow GPU access
 print(tf.config.list_physical_devices())
