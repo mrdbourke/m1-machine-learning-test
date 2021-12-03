@@ -10,7 +10,17 @@ It also has steps below to setup your M1, M1 Pro and M1 Max (steps should also f
 
 **This repo:** teaches you how to install the most common machine learning and data science packages (software) on your machine and make sure they run using sample code.
 
-## Steps (how to test your machine)
+## Machine Learning Experiments Conducted
+
+All experiments were run with the same code. For Apple devices, TensorFlow environments were created with the steps below.
+
+| Notebook Number | Experiment |
+| ----- | ----- |
+| [00](https://github.com/mrdbourke/m1-machine-learning-test/blob/main/00_cifar10_tinyvgg_benchmark.ipynb) | TinyVGG model trained on CIFAR10 dataset with TensorFlow code. |
+| [01](https://github.com/mrdbourke/m1-machine-learning-test/blob/main/01_food101_effnet_benchmark.ipynb) | EfficientNetB0 Feature Extractor on Food101 dataset with TensorFlow code.
+| [02](https://github.com/mrdbourke/m1-machine-learning-test/blob/main/02_random_forest_benchmark.ipynb) | `RandomForestClassifier` from Scikit-Learn trained with random search cross-validation on California Housing dataset. |
+
+## Steps (how to test your M1 machine)
 1. Create an environment and install dependencies ([see below](https://github.com/mrdbourke/m1-machine-learning-test#how-to-setup-a-tensorflow-environment-on-m1-m1-pro-m1-max-using-miniforge-shorter-version))
 2. Clone this repo
 3. Run various notebooks (results come at the end of the notebooks)
