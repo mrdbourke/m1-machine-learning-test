@@ -8,7 +8,7 @@ You can see all of the results comparison code in [notebook 03](https://github.c
 
 Result comparison from [notebook 00](https://github.com/mrdbourke/m1-machine-learning-test/blob/main/00_cifar10_tinyvgg_benchmark.ipynb). 
 
-![cifar 10 with TinyVGG TensorFlow model comparison]("../images/results-cifar10-with-tinyvgg.png")
+![cifar 10 with TinyVGG TensorFlow model comparison]("../images/results-cifar10-with-tinyvgg.jpeg")
 
 ## Food101 with EfficientNetB0 Feature Extractor
 
