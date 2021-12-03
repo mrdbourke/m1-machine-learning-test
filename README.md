@@ -20,6 +20,10 @@ All experiments were run with the same code. For Apple devices, TensorFlow envir
 | [01](https://github.com/mrdbourke/m1-machine-learning-test/blob/main/01_food101_effnet_benchmark.ipynb) | EfficientNetB0 Feature Extractor on Food101 dataset with TensorFlow code.
 | [02](https://github.com/mrdbourke/m1-machine-learning-test/blob/main/02_random_forest_benchmark.ipynb) | `RandomForestClassifier` from Scikit-Learn trained with random search cross-validation on California Housing dataset. |
 
+## Results
+
+See the [results directory](https://github.com/mrdbourke/m1-machine-learning-test/tree/main/results).
+
 ## Steps (how to test your M1 machine)
 1. Create an environment and install dependencies ([see below](https://github.com/mrdbourke/m1-machine-learning-test#how-to-setup-a-tensorflow-environment-on-m1-m1-pro-m1-max-using-miniforge-shorter-version))
 2. Clone this repo
