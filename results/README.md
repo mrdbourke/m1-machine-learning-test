@@ -8,18 +8,16 @@ You can see all of the results comparison code in [notebook 03](https://github.c
 
 Result comparison from [notebook 00](https://github.com/mrdbourke/m1-machine-learning-test/blob/main/00_cifar10_tinyvgg_benchmark.ipynb). 
 
-![cifar 10 with TinyVGG TensorFlow model comparison]("../images/results-cifar10-with-tinyvgg.jpeg")
+![results-cifar10-with-tinyvgg](https://user-images.githubusercontent.com/16750345/144687556-105d27fa-6cee-4a57-a74d-9c9a0b70f0f8.jpg)
 
 ## Food101 with EfficientNetB0 Feature Extractor
 
 Result comparison from [notebook 01](https://github.com/mrdbourke/m1-machine-learning-test/blob/main/01_food101_effnet_benchmark.ipynb). 
 
-![food101 dataset with EfficientNetB0 feature extractor]("../images/results-food101-with-effnetb0-feature-extractor.png")
+![results-food101-with-effnetb0-feature-extractor](https://user-images.githubusercontent.com/16750345/144687635-676e8c38-98dc-4510-8e13-a74444e272d3.jpg)
 
 ## RandomForestClassifier Cross-validation with California Housing Dataset
 
 Result comparison from [notebook 02](https://github.com/mrdbourke/m1-machine-learning-test/blob/main/02_random_forest_benchmark.ipynb). 
 
-![randomforestclassifier results with cross-validation on california housing data]("../images/results-random-forest-classifier-with-cross-validation.png")
-
-
+![results-random-forest-classifier-with-cross-validation](https://user-images.githubusercontent.com/16750345/144687642-0c8a8bf1-8842-417c-a32e-814d9eac8f0b.jpg)
