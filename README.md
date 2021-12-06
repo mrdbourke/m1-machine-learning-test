@@ -179,7 +179,7 @@ cd tensorflow-test
 
 We do so using `conda create --prefix ./env` which stands for "conda create an environment with the name `file/path/to/this/folder/env`". The `.` stands for "everything before".
 
-For example, if I didn't use the `./env`, my filepath looks like: `Users/daniel/tensorflow-test/env`
+For example, if I didn't use the `./env`, my filepath looks like: `/Users/daniel/tensorflow-test/env`
 
 ```bash
 conda create --prefix ./env
@@ -196,7 +196,7 @@ conda activate ./env
 Long version:
 
 ```bash
-conda activate Users/daniel/tensorflow-test/env
+conda activate /Users/daniel/tensorflow-test/env
 ```
 
 > **Note:** It's important to activate your environment every time you'd like to work on projects that use the software you install into that environment. For example, you might have one environment for every different project you work on. And all of the different tools for that specific project are stored in its specific environment.
@@ -204,7 +204,7 @@ conda activate Users/daniel/tensorflow-test/env
 If activating your environment went correctly, your terminal window prompt should look something like: 
 
 ```bash
-(Users/daniel/tensorflow-test/env) daniel@Daniels-MBP tensorflow-test %
+(/Users/daniel/tensorflow-test/env) daniel@Daniels-MBP tensorflow-test %
 ```
 
 11. Now we've got a Conda environment setup, it's time to install the software we need.
