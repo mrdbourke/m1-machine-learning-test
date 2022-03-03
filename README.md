@@ -47,9 +47,9 @@ source ~/miniforge3/bin/activate
 mkdir tensorflow-test
 cd tensorflow-test
 ```
-6. Make and activate Conda environment.
+6. Make and activate Conda environment. **Note:** Python 3.8 is the most stable for using the following setup.
 ```bash
-conda create --prefix ./env
+conda create --prefix ./env python=3.8
 conda activate ./env
 ```
 7. Install TensorFlow dependencies from Apple Conda channel.
