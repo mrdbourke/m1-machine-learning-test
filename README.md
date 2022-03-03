@@ -97,7 +97,7 @@ If it all worked, you should see something like:
 TensorFlow has access to the following devices:
 [PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'),
 PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
-TensorFlow version: 2.5.0
+TensorFlow version: 2.8.0
 ```
 
 ## How to setup a TensorFlow environment on M1, M1 Pro, M1 Max using Miniforge (longer version)
