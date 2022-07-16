@@ -2,11 +2,11 @@
 
 This repo contains some sample code to benchmark the new M1 MacBooks (M1 Pro and M1 Max) against various other pieces of hardware.
 
-It also has steps below to setup your M1, M1 Pro and M1 Max (steps should also for work Intel) Mac to run the code.
+It also has steps below to setup your M1, M1 Pro, M1 Max, M1 Ultra or M2 Mac to run the code.
 
 ## Who is this repo for?
 
-**You:** have a new M1, M1 Pro, M1 Max machine and would like to get started doing machine learning and data science on it.
+**You:** have a new M1, M1 Pro, M1 Max, M1 Ultra or M2 Mac and would like to get started doing machine learning and data science on it.
 
 **This repo:** teaches you how to install the most common machine learning and data science packages (software) on your machine and make sure they run using sample code.
 
@@ -24,12 +24,12 @@ All experiments were run with the same code. For Apple devices, TensorFlow envir
 
 See the [results directory](https://github.com/mrdbourke/m1-machine-learning-test/tree/main/results).
 
-## Steps (how to test your M1 machine)
+## Steps (how to test your Apple Silicon machine)
 1. Create an environment and install dependencies ([see below](https://github.com/mrdbourke/m1-machine-learning-test#how-to-setup-a-tensorflow-environment-on-m1-m1-pro-m1-max-using-miniforge-shorter-version))
 2. Clone this repo
 3. Run various notebooks (results come at the end of the notebooks)
 
-## How to setup a TensorFlow environment on M1, M1 Pro, M1 Max using Miniforge (shorter version)
+## How to setup a TensorFlow environment on M1, M1 Pro, M1 Max, M1 Ultra, M2 using Miniforge (shorter version)
 
 If you're experienced with making environments and using the command line, follow this version. If not, see the longer version below. 
 
@@ -100,7 +100,7 @@ PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
 TensorFlow version: 2.8.0
 ```
 
-## How to setup a TensorFlow environment on M1, M1 Pro, M1 Max using Miniforge (longer version)
+## How to setup a TensorFlow environment on M1, M1 Pro, M1 Max, M1 Ultra, M2 using Miniforge (longer version)
 
 If you're new to creating environments, using a new M1, M1 Pro, M1 Max machine and would like to get started running TensorFlow and other data science libraries, follow the below steps.
 
