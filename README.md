@@ -126,7 +126,7 @@ Clicking the link above will download a shell file called `Miniforge3-MacOSX-arm
 
 4. We've now got a shell file capable of installing Miniforge, but to do so we'll have to modify it's permissions to [make it executable](https://askubuntu.com/tags/chmod/info).
 
-To do so, we'll run the command `chmod -x FILE_NAME` which stands for "change mode of FILE_NAME to -executable".
+To do so, we'll run the command `chmod +x FILE_NAME` which stands for "change mode of FILE_NAME to -executable".
 
 We'll then execute (run) the program using `sh`.
 
