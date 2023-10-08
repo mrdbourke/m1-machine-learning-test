@@ -1,0 +1,22 @@
+name: m1MetalFastCHat
+channels:
+  - pytorch-nightly
+  - apple
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - tensorflow-deps
+  - jupyter
+  - jupyterlab
+  - pandas
+  - numpy
+  - matplotlib
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pip:
+    - tensorflow-macos
+    - tensorflow-metal
